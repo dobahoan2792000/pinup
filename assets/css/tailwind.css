@@ -1,0 +1,196 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@responsive{
+  .border-white-1px{
+    border: 1px solid white;
+  }
+  .top-80{
+    top:80px;
+  }
+  .font-menu{
+    font-size:13px;
+  }
+  .font-menu-lg{
+    font-size:11px;
+  }
+  .font-menu-xl{
+    font-size:13px;
+  }
+  .font-sub-menu{
+    font-size:10px;
+  }
+  .font-sub-megamenu{
+    font-size:9px;
+  }
+  .font-mon{
+    font-family: 'Montserrat';
+  }
+  .font-vida{
+    font-family: 'Vidaloka';
+  }
+  .v-align{
+    transform:translateY(-50%);
+  }
+  .align{
+    transform:translateX(-50%);
+    left: 50%;
+  }
+  .line::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 0;
+    background-color: black;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    -webkit-transition: all .2s cubic-bezier(.43,.1,0,.82);
+    -moz-transition: all .2s cubic-bezier(.43,.1,0,.82);
+    transition: all .2s cubic-bezier(.43,.1,0,.82);
+  }
+  .line-hover:hover .line::before{
+    height: 3px;
+  }
+  .line-w::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 0px;
+    background-color: white;
+    left: 0;
+    width: 100%;
+    -webkit-transition: all .2s cubic-bezier(.43,.1,0,.82);
+    -moz-transition: all .2s cubic-bezier(.43,.1,0,.82);
+    transition: all .2s cubic-bezier(.43,.1,0,.82);
+  }
+  .line-hover:hover .line-w::before{
+    height: 2px;
+  }
+  .transtion-effect{
+    transition:all 1s;
+  }
+  .dot::before,.dot2::before{
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: -15px;
+    font-size: 18px;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 0;
+    line-height: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+  .dot,.dot2{
+    left:0px;
+    transition: all .5s;
+  }
+  .dothover:hover .dot{
+      left:15px;
+
+  }
+  .dothover:hover .dot::before{
+    opacity: 1;
+}
+.dothover2:hover .dot2{
+  left:15px;
+
+}
+.dothover2:hover .dot2::before{
+opacity: 1;
+}
+.h-1px{
+  height: 1px;
+}
+.h-3px{
+  height: 3px;;
+}
+  .h-330{
+    height: 360px;
+  }
+  .h-157{
+    height: 157px;
+  }
+  .h-274{
+    height: 274px;
+  }
+  .scale1-05{
+    transform : scale(1.05);
+  }
+  .border-b-w{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 1px;
+    background-color: white;
+    left: 0;
+    width: 100%;
+  }
+  .w-330{
+    width:330px;
+  }
+  .h-191{
+    height: 191px;
+  }
+  .rotate-90{
+    transform : rotate(90deg);
+  }
+  .left-224{
+    left: 224px;;
+  }
+  .top-60{
+    top:60px;
+  }
+  .top--70{
+    top:-70px;
+  }
+  .top-70{
+    top:70px;
+  }
+  .valign{
+    top:50%;
+    transform: translateY(-50%);
+  }
+  .valign-searchbox{
+    top: calc(50% - 5px);
+    transform: translateY(-50%);
+  }
+  .bg-pinup{
+    background-image: url('/img/pinup-background/pinup-cover__.jpg');
+    background-position: center 0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  .bg-crystal{
+    background-color :rgba(0,0,0,0.2);
+  }
+  .right-40{
+    right: calc(-40%);
+  }
+  .right0{
+    right: 0px !important;
+  }
+}
+
+@font-face{
+  font-family:'Montserrat';
+  src:url('../../fonts/Montserrat/Montserrat-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face{
+  font-family:'Vidaloka';
+  src:url('../../fonts/Vidaloka/Vidaloka-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
