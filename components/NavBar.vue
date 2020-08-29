@@ -28,7 +28,7 @@
       class="absolute lg:static left-0 bg-white w-full z-10 lg:z-0 lg:flex lg:align-middle lg:bg-black lg:text-center lg:items-center lg:h-20 transition-all duration-300 overflow-scroll lg:overflow-visible"
       :class="isOpen ? 'h-64' : 'h-0'"
     >
-      <svg
+      <!-- <svg
         class="eltdf-burger lg:ml-20 xl:ml-32 hidden lg:block cursor-pointer"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,20 @@
           width="14.998"
           height="2.993"
         ></rect>
-      </svg>
+      </svg> -->
+
+      <div
+        class="w-5 h-4 relative overflow-hidden hidden lg:inline-block lg:ml-20 xl:ml-32 cursor-pointer move-hover"
+        @click="isCloseEvent"
+      >
+        <span class="absolute w-full h-3px bg-white top-0 left-0"></span>
+        <span class="absolute w-full h-3px bg-black top-0 left-30 move"></span>
+        <span class="absolute w-full h-3px bg-white bottom-0 left-0"></span>
+        <span
+          class="absolute w-full h-3px bg-black bottom-0 left--30 move2"
+        ></span>
+      </div>
+
       <ul
         class="mx-10 lg:flex lg:h-full lg:w-4/5 transition-opacity duration-500 lg:visible lg:opacity-100"
         :class="isOpen ? 'visible opacity-1' : 'invisible opacity-0'"
@@ -330,5 +343,31 @@ export default {
 .slide-enter, .slide-leave-to /* .fade-leave-active below version 2.1.8 */ {
   transform: translateY(-20px);
   opacity: 0;
+}
+.move-hover:hover .move {
+  animation-name: example;
+  animation-duration: 0.7s;
+}
+.move-hover:hover .move2 {
+  animation-name: example2;
+  animation-duration: 0.7s;
+}
+@keyframes example {
+  0% {
+    left: 30px;
+  }
+
+  100% {
+    left: -30px;
+  }
+}
+@keyframes example2 {
+  0% {
+    left: -30px;
+  }
+
+  100% {
+    left: 30px;
+  }
 }
 </style>

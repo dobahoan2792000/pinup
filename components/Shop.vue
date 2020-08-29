@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-    <div class="flex mt-10 w-4/6 md:w-5/6 flex-wrap">
+    <div id="products" class="flex mt-10 w-4/6 md:w-5/6 flex-wrap">
       <div
         v-for="product in products"
         :key="product.url"
@@ -115,12 +115,16 @@
         </svg>
       </a>
     </div>
+    <Ontop :isInShop="isInShop" />
   </div>
 </template>
 <script>
+import Ontop from '~/components/Ontop.vue'
 export default {
+  components: { Ontop },
   data() {
     return {
+      isInShop: false,
       products: [
         {
           url: '/img/Products/1.jpg',
@@ -209,8 +213,19 @@ export default {
       ],
     }
   },
-
+  mounted() {
+    window.addEventListener('scroll', () => {
+      const el = document.querySelector('#products')
+      const elDistanceToTop = el.getBoundingClientRect().top
+      if (elDistanceToTop < 0) {
+        this.isInShop = true
+        console.log('Đây la < 0 ', elDistanceToTop)
+      } else {
+        this.isInShop = false
+        console.log('Đây la > 0 ', elDistanceToTop)
+      }
+    })
+  },
   methods: {},
 }
-
 </script>

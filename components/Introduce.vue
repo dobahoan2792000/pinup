@@ -1,7 +1,7 @@
 <template>
   <div
-    class="fixed top-0 w-screen h-screen bg-crystal flex transition-all duration-600 z-10"
-    :class="isClose ? 'visible' : 'invisible delay-1000'"
+    class="fixed top-0 w-screen h-screen bg-crystal flex transition-all duration-500 z-10"
+    :class="isClose ? 'visible' : 'invisible delay-400'"
   >
     <div class="w-3/5 h-full" @click="getClose"></div>
     <div

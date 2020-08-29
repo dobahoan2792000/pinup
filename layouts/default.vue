@@ -1,10 +1,10 @@
 <template>
   <div>
-    <Social />
+    <!-- <Social />
     <Hero />
     <Shop />
-    <Footer />
-
+    <Footer /> -->
+    <Item />
   </div>
 </template>
 <script>

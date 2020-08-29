@@ -37,6 +37,11 @@
     transform:translateX(-50%);
     left: 50%;
   }
+  .center{
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+  }
   .line::before{
     content: '';
     position: absolute;
@@ -145,11 +150,14 @@ opacity: 1;
   .rotate-90{
     transform : rotate(90deg);
   }
+  .rotate-180{
+    transform : rotate(180deg);
+  }
   .left-224{
     left: 224px;;
   }
-  .top-60{
-    top:60px;
+  .top-35{
+    top:35px;
   }
   .top--70{
     top:-70px;
@@ -180,8 +188,37 @@ opacity: 1;
   .right0{
     right: 0px !important;
   }
+  .left-30{
+    left: 30px;
+  }
+  .left--30{
+    left: -30px;
+  }
+  .letter-space-15{
+    letter-spacing: .15em;
+  }
 }
-
+.rate {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  font-family: Font awesome\5 Free;
+}
+.rate::before {
+  content: '\f005\f005\f005\f005\f005';
+}
+.rated {
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 85%;
+  font-family: Font awesome\5 Free;
+}
+.rated::before {
+  content: '\f005\f005\f005\f005\f005';
+  font-weight: 900;
+}
 @font-face{
   font-family:'Montserrat';
   src:url('../../fonts/Montserrat/Montserrat-Regular.ttf');

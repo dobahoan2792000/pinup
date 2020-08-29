@@ -55,6 +55,7 @@ export default {
     icons: {
       solid: true,
       brands: true,
+      regular: true,
     },
   },
   /*
