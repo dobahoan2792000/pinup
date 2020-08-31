@@ -459,31 +459,14 @@ export default {
 }
 </script>
 <style scoped>
-.margin-left-1{
-  margin-left: 1px;
-}
+
 .height-50 {
   height: 50%;
 }
-.top-40 {
-  top: 40px;
-}
-.count-box-sm {
-  width: 57px;
-  height: 38px;
-}
-.width-38 {
-  width: 38px;
-}
-.width-19 {
-  width: 19px;
-}
+
+
 .count-box-md {
   width: 66px;
-}
-.move-hover:hover .move {
-  animation-name: shop;
-  animation-duration: 1s;
 }
 .width-47 {
   width: 47%;
@@ -492,6 +475,11 @@ export default {
    animation-name: shop;
   animation-duration: 1s;
 }
+.move-hover:hover .move {
+  animation-name: shop;
+  animation-duration: 1s;
+}
+
 @keyframes shop {
   0% {
     color: black;

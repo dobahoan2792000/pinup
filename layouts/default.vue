@@ -4,7 +4,8 @@
     <Hero />
     <Shop />
     <Footer /> -->
-    <Item />
+    <Checkout />
+
   </div>
 </template>
 <script>

@@ -3,6 +3,23 @@
 @import 'tailwindcss/utilities';
 
 @responsive{
+  .top-40 {
+    top: 40px;
+  }
+
+  .margin-left-1{
+    margin-left: 1px;
+  }
+  .width-38 {
+    width: 38px;
+  }
+  .width-19 {
+    width: 19px;
+  }
+  .count-box-sm {
+    width: 57px;
+    height: 38px;
+  }
   .border-white-1px{
     border: 1px solid white;
   }
@@ -153,6 +170,9 @@ opacity: 1;
   .rotate-180{
     transform : rotate(180deg);
   }
+  .rotate-360{
+    transform: rotate(360deg);
+  }
   .left-224{
     left: 224px;;
   }
@@ -197,6 +217,7 @@ opacity: 1;
   .letter-space-15{
     letter-spacing: .15em;
   }
+
 }
 .rate {
   position: relative;
@@ -221,13 +242,13 @@ opacity: 1;
 }
 @font-face{
   font-family:'Montserrat';
-  src:url('../../fonts/Montserrat/Montserrat-Regular.ttf');
+  src:url('/fonts/Montserrat/Montserrat-Regular.ttf');
   font-style: normal;
   font-weight: 400;
 }
 @font-face{
   font-family:'Vidaloka';
-  src:url('../../fonts/Vidaloka/Vidaloka-Regular.ttf');
+  src:url('/fonts/Vidaloka/Vidaloka-Regular.ttf');
   font-style: normal;
   font-weight: 400;
 }

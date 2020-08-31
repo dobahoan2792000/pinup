@@ -21,7 +21,8 @@
     "@nuxtjs/axios": "^5.11.0",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "nuxt": "^2.13.0",
-    "postcss-import": "^12.0.1"
+    "postcss-import": "^12.0.1",
+    "stylelint-webpack-plugin": "^2.1.0"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
@@ -43,7 +44,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
-    "stylelint": "^13.6.1",
+    "stylelint": "^13.7.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-standard": "^20.0.0",
     "tailwindcss-pseudo-elements": "^1.1.2",
