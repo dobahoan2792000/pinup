@@ -52,7 +52,7 @@
             </div>
             <div class="mt-6 md:flex md:justify-between">
               <div
-                class="w-full sm:w-5/12 md:w-1/3 px-6 lg:w-1/3 py-3 border-black border overflow-hidden relative move-hover cursor-pointer"
+                class="w-full sm:w-5/12 md:w-1/3 px-6 lg:w-1/3 xl:w-1/4 py-3 border-black border overflow-hidden relative move-hover cursor-pointer"
                 @mouseenter="isHoverReadMore = !isHoverReadMore"
                 @mouseleave="isHoverReadMore = !isHoverReadMore"
               >
