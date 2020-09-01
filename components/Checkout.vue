@@ -95,6 +95,7 @@
             <div class="flex justify-center border relative">
               <div
                 class="flex w-11/12 justify-between items-center py-3 cursor-pointer"
+                @click="displayCountries = !displayCountries"
               >
                 <span class="font-mon text-sm xl:text-xs text-gray-700"
                   >Vietnam</span
@@ -121,13 +122,14 @@
                 </svg>
               </div>
               <div
-                class="absolute w-full h-56 overflow-y-scroll mt-12 left-0 flex flex-wrap justify-center bg-white border-b border-l border-r border-gray-300"
+                class="absolute h-56 style-country flex flex-wrap justify-center bg-white border-b border-l border-r border-gray-300"
+                :class="displayCountries ? 'block' : 'hidden'"
               >
                 <input
                   type="text"
-                  class="border outline-none w-11/12 mt-4 mb-3"
+                  class="border outline-none w-11/12 mt-4 mb-3 font-mon text-sm text-gray-800"
                 />
-                <ul class="w-full pl-6">
+                <ul class="w-full pl-5 overflow-y-scroll h-40">
                   <li class="font-mon text-sm xl:text-xs text-gray-700 py-2">
                     Afghanistan
                   </li>
@@ -1079,6 +1081,7 @@ export default {
       isDisplay: false,
       isBank: true,
       isCash: false,
+      displayCountries: false,
     }
   },
   methods: {
@@ -1093,3 +1096,10 @@ export default {
   },
 }
 </script>
+<style scoped>
+.style-country{
+    width: calc(100% + 2px);
+    left: -1px;
+    margin-top: 45px;
+}
+</style>

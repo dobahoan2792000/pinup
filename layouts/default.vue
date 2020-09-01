@@ -1,10 +1,6 @@
 <template>
   <div>
-    <!-- <Social />
-    <Hero />
-    <Shop />
-    <Footer /> -->
-    <Checkout />
+    <Vintage />
 
   </div>
 </template>

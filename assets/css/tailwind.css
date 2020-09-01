@@ -124,12 +124,39 @@
   .dothover:hover .dot::before{
     opacity: 1;
 }
-.dothover2:hover .dot2{
+  .dothover2:hover .dot2{
   left:15px;
 
 }
-.dothover2:hover .dot2::before{
+  .dothover2:hover .dot2::before{
 opacity: 1;
+}
+.dot-black-category::before{
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -15px;
+  font-size: 18px;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 0;
+  line-height: inherit;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+.dot-black-category{
+  left:0px;
+  transition: all .5s;
+}
+.dot-black-category:hover{
+    left:20px;
+}
+.dot-black-category:hover::before{
+  opacity: 1;
 }
 .h-1px{
   height: 1px;
@@ -217,7 +244,15 @@ opacity: 1;
   .letter-space-15{
     letter-spacing: .15em;
   }
-
+  .dot-black::after{
+    content: '\25CF';
+    position: absolute;
+    top: -1px;
+    right: -15px;
+  }
+  .three-dot::after{
+    content: '...';
+  }
 }
 .rate {
   position: relative;
