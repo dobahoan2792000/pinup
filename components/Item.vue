@@ -468,9 +468,7 @@ export default {
 .count-box-md {
   width: 66px;
 }
-.width-47 {
-  width: 47%;
-}
+
 .effect:hover{
    animation-name: shop;
   animation-duration: 1s;
